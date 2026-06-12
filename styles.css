@@ -1,0 +1,216 @@
+/* Soné — Custom styles to complement Tailwind CDN
+   Brand palette (from the logo):
+   Ink     #1F1B16   text, buttons, wordmark
+   Cream   #FAF7F2   background
+   Gold    #B08D57   accent
+   Gold·dk #8A6D3F   accent hover
+*/
+
+:root {
+  --ink: #1F1B16;
+  --ink-soft: #2A2520;
+  --cream: #FAF7F2;
+  --gold: #B08D57;
+  --gold-dark: #8A6D3F;
+}
+
+/* Font defaults */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--cream);
+  color: var(--ink);
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Wordmark + small classical labels mirror the logo's Roman serif */
+.font-display {
+  font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+}
+
+.wordmark {
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
+/* WhatsApp / primary CTA button — original WhatsApp green for recognizability */
+.wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+}
+
+.wa-btn:hover {
+  background-color: #1da851;
+}
+
+.wa-btn-lg {
+  padding: 0.95rem 2rem;
+  font-size: 1rem;
+}
+
+/* Accent (gold) button */
+.accent-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--gold);
+  color: var(--ink);
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+  letter-spacing: 0.01em;
+}
+
+.accent-btn:hover {
+  background-color: #c5a06b;
+}
+
+.accent-btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+/* Real logo lockup (black-on-white PNG). multiply blend drops the white
+   background so it sits cleanly on cream/light surfaces. */
+.logo-hero {
+  width: min(520px, 92%);
+  height: auto;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+}
+
+.logo-plate {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+/* The brand "trazo" (wave) used as a section accent */
+.trazo {
+  display: block;
+  width: 72px;
+  height: 14px;
+  margin: 0 auto;
+  color: var(--gold);
+}
+
+.trazo svg { width: 100%; height: 100%; }
+
+/* FAQ accordion */
+.faq-item {
+  background: #fff;
+  border-radius: 0.75rem;
+  border: 1px solid #ece7df;
+  overflow: hidden;
+}
+
+.faq-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.125rem 1.5rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  gap: 1rem;
+  transition: background-color 0.15s;
+}
+
+.faq-summary:hover {
+  background-color: #faf8f4;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-body {
+  padding: 0 1.5rem 1.125rem;
+  color: #5b5448;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  border-top: 1px solid #f3efe8;
+  padding-top: 1rem;
+}
+
+.chevron {
+  width: 1rem;
+  height: 1rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+details[open] .chevron {
+  transform: rotate(180deg);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Legal pages typography */
+.legal-content h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ece7df;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.legal-content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.legal-content p {
+  margin-bottom: 0.875rem;
+  line-height: 1.7;
+  color: #44403c;
+}
+
+.legal-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #44403c;
+  line-height: 1.7;
+}
+
+.legal-content ul li {
+  margin-bottom: 0.25rem;
+}
+
+.legal-content strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.legal-content a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+}

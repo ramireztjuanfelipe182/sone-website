@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soné — Tu historia, hecha canción</title>
+  <meta name="description" content="Canciones 100% personalizadas entregadas en minutos por WhatsApp. Cuéntanos tu historia y te la convertimos en una canción única.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2A2520',
+            'primary-dark': '#1F1B16',
+            accent: '#B08D57',
+            'accent-dark': '#8A6D3F',
+            cream: '#FAF7F2',
+            charcoal: '#1F1B16',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            display: ['Cinzel', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-stone-200">
+    <nav class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <!-- Wordmark in Cinzel (mirrors the logo). Swap for assets/logo.svg when available — see assets/README.md -->
+      <a href="/" class="wordmark text-2xl text-charcoal flex-shrink-0">SONÉ</a>
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium text-stone-500">
+        <a href="#como-funciona" class="hover:text-accent-dark transition-colors">Cómo funciona</a>
+        <a href="#precio" class="hover:text-accent-dark transition-colors">Precio</a>
+        <a href="#faq" class="hover:text-accent-dark transition-colors">FAQ</a>
+        <a href="terminos.html" class="hover:text-accent-dark transition-colors">T&amp;C</a>
+      </div>
+      <a href="#" class="wa-btn text-sm">
+        <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Crear mi canción
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-24 text-center">
+    <div class="inline-flex items-center gap-2 bg-accent/10 text-accent-dark font-medium text-sm px-4 py-1.5 rounded-full mb-8 border border-accent/20">
+      Canciones personalizadas entregadas por WhatsApp
+    </div>
+    <h1 class="mb-8">
+      <img src="assets/logo-sone.png" alt="Soné — Tu historia, hecha canción" class="logo-hero">
+    </h1>
+    <p class="text-xl text-stone-500 max-w-xl mx-auto mb-10 leading-relaxed">
+      Canciones 100% personalizadas, entregadas en minutos por WhatsApp. Solo cuéntanos tu historia.
+    </p>
+    <a href="#" class="wa-btn wa-btn-lg">
+      <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Crear mi canción — Escribir a Melodía
+    </a>
+
+    <!-- Decorative song fragment -->
+    <div class="mt-16 max-w-md mx-auto bg-white border border-stone-200 rounded-2xl p-7 text-left shadow-sm">
+      <div class="flex items-center gap-2.5 mb-4">
+        <span class="trazo" style="width:34px;height:10px;margin:0"><svg viewBox="0 0 120 16" fill="none"><path d="M0 8 Q 15 0 30 8 T 60 8 T 90 8 T 120 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="font-display text-[0.7rem] text-accent-dark tracking-[0.18em] uppercase">Ejemplo de canción</span>
+      </div>
+      <p class="font-serif text-xl italic text-stone-700 leading-relaxed">
+        "Mamá, en cada abrazo tuyo aprendí lo que es el amor,<br>
+        eres el norte que me guía cuando pierdo la dirección..."
+      </p>
+      <p class="text-xs text-stone-400 mt-4 tracking-wide">— Canción para el Día de la Madre</p>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona" class="bg-white py-20 border-y border-stone-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-charcoal mb-4">¿Cómo funciona?</h2>
+        <span class="trazo mb-4"><svg viewBox="0 0 120 16" fill="none"><path d="M0 8 Q 15 0 30 8 T 60 8 T 90 8 T 120 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        <p class="text-stone-500 text-lg">Tres pasos. Sin apps. Sin complicaciones.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="text-center p-8 rounded-2xl bg-cream border border-stone-100">
+          <div class="w-14 h-14 rounded-full border border-accent/40 flex items-center justify-center mx-auto mb-5 text-accent-dark">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4-.84L3 20l1.06-3.18A7.96 7.96 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <div class="font-display text-xs text-accent-dark uppercase tracking-[0.18em] mb-3">Paso 1</div>
+          <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Cuéntanos tu historia</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            Escríbele a Melodía por WhatsApp. Ella te hace preguntas sencillas sobre la ocasión, la persona y el estilo que buscas.
+          </p>
+        </div>
+
+        <div class="text-center p-8 rounded-2xl bg-cream border border-stone-100">
+          <div class="w-14 h-14 rounded-full border border-accent/40 flex items-center justify-center mx-auto mb-5 text-accent-dark">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zM19.5 7.125L16.875 4.5"/></svg>
+          </div>
+          <div class="font-display text-xs text-accent-dark uppercase tracking-[0.18em] mb-3">Paso 2</div>
+          <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Aprueba la letra</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            Recibe la letra completa. Pide todos los cambios que quieras — sin límite. El audio no se genera hasta que estés 100% satisfecho.
+          </p>
+        </div>
+
+        <div class="text-center p-8 rounded-2xl bg-cream border border-stone-100">
+          <div class="w-14 h-14 rounded-full border border-accent/40 flex items-center justify-center mx-auto mb-5 text-accent-dark">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"/></svg>
+          </div>
+          <div class="font-display text-xs text-accent-dark uppercase tracking-[0.18em] mb-3">Paso 3</div>
+          <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Recibe tu canción</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            En 3–5 minutos, el audio MP3 llega directo a tu WhatsApp. Listo para escuchar, compartir y sorprender.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ INCLUYE -->
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-charcoal mb-3">¿Qué incluye?</h2>
+          <span class="trazo mb-6" style="margin-left:0"><svg viewBox="0 0 120 16" fill="none"><path d="M0 8 Q 15 0 30 8 T 60 8 T 90 8 T 120 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          <p class="text-stone-500 mb-8 leading-relaxed">
+            Con un solo pedido tienes todo lo que necesitas para crear algo verdaderamente especial.
+          </p>
+          <ul class="space-y-5">
+
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full border border-accent/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <span class="font-semibold text-charcoal">Letra 100% personalizada</span>
+                <p class="text-stone-500 text-sm mt-0.5">Escrita con tu historia, tus palabras y tu intención</p>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full border border-accent/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <span class="font-semibold text-charcoal">Revisiones de letra ilimitadas</span>
+                <p class="text-stone-500 text-sm mt-0.5">Ajusta lo que quieras antes de dar el visto bueno</p>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full border border-accent/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <span class="font-semibold text-charcoal">1 canción completa en audio</span>
+                <p class="text-stone-500 text-sm mt-0.5">Generada en el estilo y género que elegiste</p>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full border border-accent/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <span class="font-semibold text-charcoal">1 revisión de audio incluida</span>
+                <p class="text-stone-500 text-sm mt-0.5">Ajusta el ritmo, la voz o el estilo después de escucharla</p>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full border border-accent/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <span class="font-semibold text-charcoal">Entrega MP3 por WhatsApp</span>
+                <p class="text-stone-500 text-sm mt-0.5">Sin apps adicionales, sin cuentas que crear</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="bg-charcoal rounded-3xl p-9 text-cream">
+          <span class="trazo" style="margin:0 0 1.25rem 0; width:60px"><svg viewBox="0 0 120 16" fill="none"><path d="M0 8 Q 15 0 30 8 T 60 8 T 90 8 T 120 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          <p class="font-serif text-2xl italic leading-relaxed mb-7 text-stone-100">
+            "No necesitas saber de música. No necesitas descargar ninguna app. Solo necesitas tener algo que celebrar."
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-stone-300 text-xs px-3 py-1.5 rounded-full border border-white/15">Cumpleaños</span>
+            <span class="text-stone-300 text-xs px-3 py-1.5 rounded-full border border-white/15">Bodas</span>
+            <span class="text-stone-300 text-xs px-3 py-1.5 rounded-full border border-white/15">Aniversarios</span>
+            <span class="text-stone-300 text-xs px-3 py-1.5 rounded-full border border-white/15">Despedidas</span>
+            <span class="text-stone-300 text-xs px-3 py-1.5 rounded-full border border-white/15">Día de la Madre</span>
+            <span class="text-stone-300 text-xs px-3 py-1.5 rounded-full border border-white/15">Graduaciones</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIO -->
+  <section id="precio" class="bg-white py-20 border-y border-stone-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-charcoal mb-4">Un precio. Todo incluido.</h2>
+        <span class="trazo mb-4"><svg viewBox="0 0 120 16" fill="none"><path d="M0 8 Q 15 0 30 8 T 60 8 T 90 8 T 120 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        <p class="text-stone-500 text-lg">Sin sorpresas. Sin costos adicionales.</p>
+      </div>
+      <div class="max-w-sm mx-auto bg-gradient-to-br from-primary to-primary-dark rounded-3xl p-8 text-white text-center shadow-2xl shadow-stone-900/20">
+        <div class="font-serif text-6xl font-bold mb-1 text-accent">$89.000</div>
+        <div class="text-sm mb-8 opacity-60 tracking-wide">pesos colombianos</div>
+        <ul class="text-sm space-y-3 mb-8 text-left">
+          <li class="flex items-center gap-2.5"><span class="text-accent font-bold">✓</span> Letra personalizada + revisiones ilimitadas</li>
+          <li class="flex items-center gap-2.5"><span class="text-accent font-bold">✓</span> Canción completa en audio MP3</li>
+          <li class="flex items-center gap-2.5"><span class="text-accent font-bold">✓</span> 1 revisión de audio incluida</li>
+          <li class="flex items-center gap-2.5"><span class="text-accent font-bold">✓</span> Entrega en 3–5 minutos</li>
+          <li class="flex items-center gap-2.5"><span class="text-accent font-bold">✓</span> Pago seguro vía Mercado Pago</li>
+          <li class="flex items-center gap-2.5"><span class="text-accent font-bold">✓</span> Licencia de uso comercial permanente</li>
+        </ul>
+        <a href="#" class="wa-btn w-full justify-center">
+          <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Empezar ahora
+        </a>
+        <p class="text-xs mt-4 opacity-50">No necesitas cuenta en Mercado Pago</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-charcoal mb-4">Preguntas frecuentes</h2>
+        <span class="trazo"><svg viewBox="0 0 120 16" fill="none"><path d="M0 8 Q 15 0 30 8 T 60 8 T 90 8 T 120 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </div>
+      <div class="space-y-3">
+
+        <details class="faq-item group">
+          <summary class="faq-summary">
+            ¿Cuánto cuesta?
+            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="faq-body">
+            $89.000 pesos colombianos (aproximadamente USD 25). Todo incluido — letra, audio, revisiones y entrega.
+          </div>
+        </details>
+
+        <details class="faq-item group">
+          <summary class="faq-summary">
+            ¿Cuánto tiempo tarda?
+            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="faq-body">
+            Una vez que apruebes la letra, el audio se genera en aproximadamente 3 a 5 minutos y llega directo a tu WhatsApp. Puedes pedir una canción para el mismo día.
+          </div>
+        </details>
+
+        <details class="faq-item group">
+          <summary class="faq-summary">
+            ¿Cuántas revisiones de letra puedo pedir?
+            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="faq-body">
+            Las que necesites, sin límite. Puedes indicarnos exactamente qué decir, en qué parte y en el formato que prefieras. El audio no se genera hasta que estés 100% satisfecho con la letra.
+          </div>
+        </details>
+
+        <details class="faq-item group">
+          <summary class="faq-summary">
+            ¿Cuántas versiones de audio recibo?
+            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="faq-body">
+            Recibes una versión de audio. Si quieres ajustar el ritmo, el estilo o la voz, puedes solicitar una revisión adicional después de escucharla. Es tu única oportunidad de modificar el audio, así que incluye todos los cambios deseados en un solo mensaje.
+          </div>
+        </details>
+
+        <details class="faq-item group">
+          <summary class="faq-summary">
+            ¿Cómo recibo la canción?
+            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="faq-body">
+            Por WhatsApp, como archivo de audio en formato MP3. Puedes reproducirlo directamente, descargarlo y compartirlo por cualquier canal — redes sociales, correo, otra app de mensajería.
+          </div>
+        </details>
+
+        <details class="faq-item group">
+          <summary class="faq-summary">
+            ¿Es seguro el pago?
+            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="faq-body">
+            Sí. El link de pago te lleva directamente al sitio oficial de Mercado Pago — la misma plataforma que usa Mercado Libre. Tus datos financieros son manejados exclusivamente por ellos bajo sus estándares de seguridad. Soné no almacena ni tiene acceso a tu información de pago.
+          </div>
+        </details>
+
+        <details class="faq-item group">
+          <summary class="faq-summary">
+            ¿Tengo los derechos de la canción?
+            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="faq-body">
+            Al comprar tu canción recibes una licencia de uso comercial permanente. Puedes publicarla en redes sociales, incluirla en videos, distribuirla en plataformas de streaming y monetizarla. Soné no reclama ningún porcentaje de tus ganancias.
+          </div>
+        </details>
+
+        <details class="faq-item group">
+          <summary class="faq-summary">
+            ¿Puede ser en otro idioma?
+            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="faq-body">
+            Sí, en el idioma que prefieras — inglés, portugués, francés u otro. Solo indícaselo a Melodía al inicio de la conversación.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA BANNER -->
+  <section class="bg-charcoal py-20 text-cream">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="font-serif text-4xl sm:text-5xl font-semibold mb-4">¿Tienes algo que celebrar?</h2>
+      <span class="trazo mb-6"><svg viewBox="0 0 120 16" fill="none"><path d="M0 8 Q 15 0 30 8 T 60 8 T 90 8 T 120 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      <p class="text-lg mb-8 opacity-70">Dale a ese momento la canción que se merece.</p>
+      <a href="#" class="wa-btn wa-btn-lg">
+        <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Crear mi canción — Escribir a Melodía
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary-dark text-stone-400 py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+        <div class="text-center md:text-left">
+          <div class="wordmark text-2xl text-white mb-1">SONÉ</div>
+          <p class="text-sm italic font-serif">Tu historia, hecha canción.</p>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="flex items-center gap-6">
+            <a href="terminos.html" class="hover:text-accent transition-colors">Términos y Condiciones</a>
+            <a href="privacidad.html" class="hover:text-accent transition-colors">Política de Privacidad</a>
+          </div>
+          <a href="mailto:sone.soporte@gmail.com" class="hover:text-accent transition-colors">sone.soporte@gmail.com</a>
+        </div>
+        <div class="text-center md:text-right">
+          <p>© 2026 Juan Felipe Ramírez Téllez</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
