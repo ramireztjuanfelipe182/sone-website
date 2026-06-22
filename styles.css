@@ -161,9 +161,10 @@ details[open] .chevron {
   transform: rotate(180deg);
 }
 
-/* Smooth scroll */
+/* Smooth scroll + offset for the sticky nav (so anchored headings aren't hidden) */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 /* Legal pages typography */
