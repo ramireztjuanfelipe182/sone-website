@@ -94,6 +94,11 @@ h1, h2, h3, .font-serif {
   mix-blend-mode: multiply;
 }
 
+/* Hero: the logo now sits above a text headline, so it's a bit smaller */
+.logo-hero-sm {
+  width: min(380px, 80%);
+}
+
 .logo-plate {
   width: 100%;
   max-width: 320px;
